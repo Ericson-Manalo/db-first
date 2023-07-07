@@ -1,21 +1,21 @@
 Nome della tabella : macchine
 
-id                                  intero                                  MEDIUMINT
-marca                               stringa                                 VARCHAR(25)
-condizione                          stringa                                 VARCHAR(15)
-modello                             stringa                                 VARCHAR(50)
-motore                              stringa                                 VARCHAR(30)
-altezza                             float                                   FLOAT(6,2)
-larghezza                           float                                   FLOAT(6,2)
-lunghezza                           float                                   FLOAT(6,2)
-prezzo                              float                                   FLOAT(9,2)
-numero_porte                        intero                                  TINYINT
-posti_omologati                     intero                                  TINYINT
-anno_produzione                     intero                                  SMALLINT
-chilometraggio                      intero                                  SMALLINT
-tipo_di_cambio                      stringa                                 VARCHAR(20)
-alimentazione                       stringa                                 VARCHAR(20)
-tipologia                           stringa                                 VARCHAR(50)
-data_immatricolazione               data                                    YEAR
-data_produzione                     data                                    YEAR
-targa                               stringa                                 VARCHAR(10)
+id                                  intero                                  MEDIUMINT   UNSIGNED PRIMARY_KEY AUTOINCREMENET
+marca                               stringa                                 VARCHAR(25) NOTNULL
+condizione                          stringa                                 VARCHAR(15) NOTNULL
+modello                             stringa                                 VARCHAR(50) NOTNULL
+motore                              stringa                                 VARCHAR(30) NOTNULL
+altezza                             float                                   FLOAT(6,2)  NOTNULL
+larghezza                           float                                   FLOAT(6,2)  NOTNULL
+lunghezza                           float                                   FLOAT(6,2)  NOTNULL
+prezzo                              float                                   FLOAT(9,2)  NOTNULL
+numero_porte                        intero                                  TINYINT     NOTNULL
+posti_omologati                     intero                                  TINYINT     NOTNULL
+anno_produzione                     intero                                  SMALLINT    NOTNULL
+chilometraggio                      intero                                  SMALLINT    NOTNULL UNIQUE
+tipo_di_cambio                      stringa                                 VARCHAR(20) NOTNULL
+alimentazione                       stringa                                 VARCHAR(20) NOTNULL
+tipologia                           stringa                                 VARCHAR(50) NOTNULL
+data_immatricolazione               data                                    YEAR        NOTNULL UNIQUE
+data_produzione                     data                                    YEAR        NOTNULL
+targa                               stringa                                 VARCHAR(10) NOTNULL UNIQUE
